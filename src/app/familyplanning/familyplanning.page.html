@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button class="clear-button" fill="clear" (click)="goBack()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    <ion-title>Family Planning</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="family">
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Date</ion-label>
+      <ion-datetime
+        presentation="date"
+        [(ngModel)]="date"
+        name="date"
+        class="date"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input
+        type="text"
+        placeholder="Enter Mothers Name"
+        [(ngModel)]="name"
+        name="name"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Age</ion-label>
+      <ion-input
+        type="number"
+        placeholder="Enter your age"
+        [(ngModel)]="age"
+        name="age"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Address</ion-label>
+      <ion-textarea
+        rows="2"
+        placeholder="Enter your address"
+        [(ngModel)]="address"
+        name="address"
+      ></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Paraang Ginamit</ion-label>
+      <ion-select
+        placeholder="N/F"
+        [(ngModel)]="ParaangGinamit"
+        name="ParangGinamit"
+      >
+        <ion-select-option value="Natural">Natural </ion-select-option>
+        <ion-select-option value="Artificial">Artificial</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Month</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="Month" name="Month">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="Feruary">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="Decemver">December</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked"
+        >Ni-refer sa Routine Health Maintenance(RHM)</ion-label
+      >
+      <ion-select placeholder="Y/N" [(ngModel)]="RHM" name="RHM">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" (click)="submit()">Submit</ion-button>
+  <ion-button fill="outline" expand="full" (click)="goBack2()"
+    >Cancel</ion-button
+  >
+</ion-content>

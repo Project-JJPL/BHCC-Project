@@ -1,0 +1,57 @@
+ion-content{
+    --background:linear-gradient(0deg, rgba(0,0,0,0),rgba(0,0,0,0)),
+    url("../../assets/images/display.png") no-repeat center center / cover;
+    position: fixed;
+}
+.white-icon {
+    color: white;
+  }
+
+.custom-calendar{
+    background: linear-gradient(135deg, #5f47e6, #bfa0cc);
+    position: fixed;
+    margin-top: 300px;
+    justify-content: center;
+    justify-items: center;
+    right: 4%;
+}
+
+ion-card{
+    margin-top: 17%;
+    display: flex;
+    justify-content: center;
+}
+ion-list{
+    position: fixed;
+    width: 100%;
+}
+.red {
+    --background: red;
+    --border-color: red;
+    color: white; /* Set the text color to ensure readability */
+}
+.darkblue {
+    --background: darkblue;
+    --border-color:  darkblue;
+    --color: white;
+  }
+
+.date{
+    position: fixed;
+    
+}
+
+.notes{
+    bottom: 60px;
+}
+
+.days{
+    margin-top: 70px;
+}
+
+.note{
+    background-color: rgb(246, 246, 246);
+}
+.n{
+    background-color: rgb(58, 57, 57);
+}

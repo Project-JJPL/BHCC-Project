@@ -1,0 +1,181 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button class="clear-button" fill="clear" (click)="goBack()">
+      <ion-icon class="clear-buttons" name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    <ion-title>Mother Medication</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="motherform">
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input
+        type="text"
+        placeholder="Enter your name"
+        [(ngModel)]="name"
+        name="name"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Age</ion-label>
+      <ion-input
+        type="number"
+        placeholder="Enter your age"
+        [(ngModel)]="age"
+        name="age"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Address</ion-label>
+      <ion-textarea
+        rows="2"
+        placeholder="Enter your address"
+        [(ngModel)]="address"
+        name="address"
+      ></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Date</ion-label>
+      <ion-datetime
+        presentation="date"
+        [(ngModel)]="date"
+        name="date"
+        class="date"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Time of Birth</ion-label>
+      <ion-datetime
+        presentation="time"
+        [(ngModel)]="time"
+        name="time"
+        class="birth"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Follow-Up</ion-label>
+      <ion-select placeholder="24Hrs/1Week" [(ngModel)]="follow" name="follow">
+        <ion-select-option value="24hours"
+          >Sa loob ng 24hours
+        </ion-select-option>
+        <ion-select-option value="1Week">Sa loob ng 1Linggo</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Saan Nanganak</ion-label>
+      <ion-select placeholder="ROLI" [(ngModel)]="roli" name="roli">
+        <ion-select-option value="Rural Health Unit (RHU)"
+          >Rural Health Unit (RHU)</ion-select-option
+        >
+        <ion-select-option value="Hospital">Hospital</ion-select-option>
+        <ion-select-option value="Lying in">Lying in</ion-select-option>
+        <ion-select-option value="Iba pa">Iba pa</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Sino ang Nagpaanak</ion-label>
+      <ion-select placeholder="DMNI" [(ngModel)]="dmni" name="dmni">
+        <ion-select-option value="Doctor">Doctor</ion-select-option>
+        <ion-select-option value="Midwife">Midwife</ion-select-option>
+        <ion-select-option value="Nurse">Nurse</ion-select-option>
+        <ion-select-option value="Iba pa">Iba pa</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Petsa ng Unang Pagpapasuso</ion-label>
+      <ion-datetime
+        presentation="date"
+        [(ngModel)]="date1"
+        name="date1"
+        class="petsa"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Oras ng Unang Pagpapasuso</ion-label>
+      <ion-datetime
+        presentation="time"
+        [(ngModel)]="oras"
+        name="oras"
+        class="oras"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Vitamin A</ion-label>
+      <ion-select
+        placeholder="Select Amount"
+        interface="popover"
+        [(ngModel)]="vitamina"
+        name="vitamina"
+      >
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <ion-select-option value="3">3</ion-select-option>
+        <ion-select-option value="4">4</ion-select-option>
+        <ion-select-option value="5">5</ion-select-option>
+        <ion-select-option value="6">6</ion-select-option>
+        <ion-select-option value="7">7</ion-select-option>
+        <ion-select-option value="8">8</ion-select-option>
+        <ion-select-option value="9">9</ion-select-option>
+        <ion-select-option value="10">10</ion-select-option>
+        <ion-select-option value="11">11</ion-select-option>
+        <ion-select-option value="12">12</ion-select-option>
+        <ion-select-option value="13">13</ion-select-option>
+        <ion-select-option value="14">14</ion-select-option>
+        <ion-select-option value="15">15</ion-select-option>
+        <ion-select-option value="16">16</ion-select-option>
+        <ion-select-option value="17">17</ion-select-option>
+        <ion-select-option value="18">18</ion-select-option>
+        <ion-select-option value="19">19</ion-select-option>
+        <ion-select-option value="20">20</ion-select-option>
+        <ion-select-option value="21">21</ion-select-option>
+        <ion-select-option value="22">22</ion-select-option>
+        <ion-select-option value="23">23</ion-select-option>
+        <ion-select-option value="24">24</ion-select-option>
+        <ion-select-option value="25">25</ion-select-option>
+        <ion-select-option value="26">26</ion-select-option>
+        <ion-select-option value="27">27</ion-select-option>
+        <ion-select-option value="28">28</ion-select-option>
+        <ion-select-option value="29">29</ion-select-option>
+        <ion-select-option value="30">30</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Fearous Sulfate</ion-label>
+      <ion-select placeholder="1st-2nd-3rd" [(ngModel)]="fs" name="fs">
+        <ion-select-option value="1st">1st</ion-select-option>
+        <ion-select-option value="2nd">2nd</ion-select-option>
+        <ion-select-option value="3rd">3rd</ion-select-option>
+      </ion-select>
+      <ion-datetime
+        presentation="month-year"
+        [(ngModel)]="date3"
+        name="date3"
+        class="date3"
+      ></ion-datetime>
+      <ion-input
+        type="number"
+        placeholder="Number of Intake"
+        [(ngModel)]="intake"
+        name="intake"
+      ></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" (click)="submit()" class="submit"
+      >Submit</ion-button
+    >
+    <ion-button fill="outline" expand="full" (click)="goBack2()"
+      >Cancel</ion-button
+    >
+  </ion-list>
+</ion-content>

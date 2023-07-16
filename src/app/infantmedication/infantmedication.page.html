@@ -1,0 +1,396 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button class="clear-button" fill="clear" (click)="goBack()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    <ion-title>Infant Medication</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="infant">
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Child Name</ion-label>
+      <ion-input
+        type="text"
+        placeholder="Enter Name of Child"
+        [(ngModel)]="cname"
+        name="cname"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Age</ion-label>
+      <ion-input
+        type="number"
+        placeholder="Enter child age"
+        [(ngModel)]="age"
+        name="age"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Date of Birth</ion-label>
+      <ion-datetime
+        presentation="date"
+        [(ngModel)]="date"
+        name="date"
+        class="date"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Mothers Name</ion-label>
+      <ion-input
+        type="text"
+        placeholder="Enter Mothers Name"
+        [(ngModel)]="mname"
+        name="mname"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Address in Purok</ion-label>
+      <ion-textarea
+        rows="2"
+        placeholder="Enter your address"
+        [(ngModel)]="address"
+        name="address"
+      ></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">BCS</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="mm" name="mm">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn1" name="yn1">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">HEPA B</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="hepab" name="hepab">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn2" name="yn2">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">PENTA 1</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="penta1" name="penta1">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn3" name="yn3">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">PENTA 2</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="penta2" name="penta2">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn4" name="yn4">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">PENTA 3</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="penta3" name="penta3">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn5" name="yn5">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">OPV 1</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="opv1" name="opv1">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn6" name="yn6">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">OPV 2</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="opv2" name="opv2">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn7" name="yn7">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">OPV 3</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="opv3" name="opv3">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn8" name="yn8">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">PCVB 1</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="pcvb1" name="pcvb1">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn9" name="yn9">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">PCVB2</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="pcvb2" name="pcvb2">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn10" name="yn10">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">PCVB3</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="pcvb3" name="pcvb3">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn11" name="yn11">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">IPV 1</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="ipv1" name="ipv1">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn12" name="yn12">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">IPV 2</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="ipv2" name="ipv2">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn13" name="yn13">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">MMR 1</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="mmr1" name="mmr1">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn14" name="yn14">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">MMR 2</ion-label>
+      <ion-select placeholder="MM" [(ngModel)]="mmr2" name="mmr2">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="February">February</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+      <ion-select placeholder="Y/N" [(ngModel)]="yn15" name="yn15">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button expand="full" (click)="submit()">Submit</ion-button>
+    <ion-button fill="outline" expand="full" (click)="goBack2()"
+      >Cancel</ion-button
+    >
+  </ion-list>
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-content class="transparent-content">
+  <ion-button class="clear-button" fill="clear" (click)="goBack()">
+    <ion-icon name="arrow-back-sharp" class="white-icon"></ion-icon>
+  </ion-button>
+  <ion-card class="transparent-card">
+    <div class="image-container">
+      <img alt="Mother Medication" src="../../assets/images/mm.png" />
+    </div>
+    <button (click)="goForwardmm()" class="cool-button">
+      <ion-icon
+        slot="start"
+        name="woman-outline"
+        class="bigger-icon"
+      ></ion-icon>
+      Mother Medication
+    </button>
+  </ion-card>
+  <ion-card class="transparent-card">
+    <div class="image-container">
+      <img alt="Infant Medication" src="../../assets/images/im.png" />
+    </div>
+    <button (click)="goForwardim()" class="cool-button">
+      <ion-icon
+        slot="start"
+        name="eyedrop-outline"
+        class="bigger-icon"
+      ></ion-icon>
+      Infant Medication
+    </button>
+  </ion-card>
+  <ion-card class="transparent-card">
+    <div class="image-container">
+      <img alt="Family Planning" src="../../assets/images/fp.png" />
+    </div>
+    <button (click)="goForwardfp()" class="cool-button">
+      <ion-icon slot="start" name="home-outline" class="bigger-icon"></ion-icon>
+      Family Planning
+    </button>
+  </ion-card>
+  <ion-card class="transparent-card">
+    <div class="image-container">
+      <img alt="Adult Medication" src="../../assets/images/am.png" />
+    </div>
+    <button (click)="goForwardam()" class="cool-button">
+      <ion-icon slot="start" name="walk-outline" class="bigger-icon"></ion-icon>
+      Adult Medication
+    </button>
+  </ion-card>
+</ion-content>

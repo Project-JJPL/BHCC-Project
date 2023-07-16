@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button class="clear-button" fill="clear" (click)="goBack()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+    </ion-button>
+    <ion-title>Adult Medication</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="adult">
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Name of Facility</ion-label>
+      <ion-input
+        type="text"
+        placeholder="Enter the name of facility"
+        [(ngModel)]="facility"
+        name="facility"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Lastname</ion-label>
+      <ion-input
+        type="text"
+        placeholder="Enter Lastname"
+        [(ngModel)]="lastname"
+        name="lastname"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Firstname</ion-label>
+      <ion-input
+        type="text"
+        placeholder="Enter Firstname"
+        [(ngModel)]="firstname"
+        name="firstname"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Middlename</ion-label>
+      <ion-input
+        type="text"
+        placeholder="Enter Middlename"
+        [(ngModel)]="mname"
+        name="mname"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Sex</ion-label>
+      <ion-select placeholder="M/F" [(ngModel)]="sex" name="sex">
+        <ion-select-option value="Male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Date of Birth</ion-label>
+      <ion-datetime
+        presentation="date"
+        [(ngModel)]="date"
+        name="date"
+        class="date"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Address</ion-label>
+      <ion-textarea
+        rows="2"
+        placeholder="Enter your address"
+        [(ngModel)]="address"
+        name="address"
+      ></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">HYPERTENSIVE</ion-label>
+      <ion-select
+        placeholder="Y/N"
+        [(ngModel)]="hypertensive"
+        name="hypertensive"
+      >
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">DIABETIS</ion-label>
+      <ion-select placeholder="Y/N" [(ngModel)]="diabetis" name="diabetis">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">CHOLESTEROL</ion-label>
+      <ion-select
+        placeholder="Y/N"
+        [(ngModel)]="cholesterol"
+        name="cholesterol"
+      >
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">HEART</ion-label>
+      <ion-select placeholder="Y/N" [(ngModel)]="heart" name="heart">
+        <ion-select-option value="Yes">YES</ion-select-option>
+        <ion-select-option value="No">NO</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Others</ion-label>
+      <ion-input
+        type="text"
+        placeholder="Others"
+        [(ngModel)]="others"
+        name="others"
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="submit()">Submit</ion-button>
+  <ion-button fill="outline" expand="full" (click)="goBack2()"
+    >Cancel</ion-button
+  >
+</ion-content>

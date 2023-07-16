@@ -1,0 +1,92 @@
+
+ion-content{
+  --background:linear-gradient(0deg, rgba(0,0,0,0),rgba(0,0,0,0)),
+  url("../../assets/images/display.png") no-repeat center center / cover;
+}
+
+.clear-button{
+  position: fixed;
+}
+.white-icon {
+  color: white;
+  position: fixed;
+}
+
+.transparent-card {
+  margin-top: 120px;
+  background: transparent;
+  border: none;
+}
+
+.small-card {
+  width: 300px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.card-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.transparent-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-width: 20px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.image-button {
+  margin-top: -50px;
+}
+
+.cool-button {
+  font-family: 'Your Cool Font', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(30, 89, 114); 
+  color: #ffffff; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cool-button:hover {
+  background-color: #235ab3; 
+}
+
+.bigger-icon {
+  font-size: 20px; 
+}
+
+
+
+
+
+
+
+  
+  

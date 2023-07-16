@@ -1,0 +1,33 @@
+ion-content{
+    --background:linear-gradient(0deg, rgba(0,0,0,0),rgba(0,0,0,0)),
+    url("../../assets/images/display.png") no-repeat center center / cover;
+}
+.white-icon{
+    color: white;
+}
+.content-wrapper {
+    margin-top: 80px; 
+}
+.heading {
+    font-weight: bold;
+  }
+  .content-wrapper {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .custom-button {
+    --background: rgb(72, 70, 130);
+    --color: white;
+    --border-radius: 50%;
+    --padding-start: 4px;
+  --padding-end: 4px;
+  font-size: 10px;
+  margin-left: 335px;
+  position: absolute;
+  top: 100px;
+  left: -10px;
+  
+
+  }
+  

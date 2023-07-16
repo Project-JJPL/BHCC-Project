@@ -1,0 +1,61 @@
+ion-content{
+    --background:linear-gradient(0deg, rgba(0,0,0,0),rgba(0,0,0,0)),
+    url("../../assets/images/loginb.png") no-repeat center center / cover;
+}
+
+ion-item{
+    margin-top:65%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-container {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .title {
+    font-size: 48px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    color: #777;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .login-container ion-item {
+    --ion-background-color: transparent;
+    --ion-color-base: rgba(255, 255, 255, 0.7);
+  }
+
+  .login-container ion-input {
+    --ion-background-color: transparent;
+    --ion-color-base: rgba(255, 255, 255, 0.7);
+    --ion-color-placeholder: rgba(255, 255, 255, 0.7);
+    --ion-color: #fff;
+  }
+  
+
+  .title {
+    margin-top: 25px;
+    background-image: linear-gradient(to right, #4122ed, #8319b0); /* Replace these colors with your desired gradient */
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+  }
+

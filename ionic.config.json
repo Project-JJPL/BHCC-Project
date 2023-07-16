@@ -1,0 +1,7 @@
+{
+  "name": "AppDone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

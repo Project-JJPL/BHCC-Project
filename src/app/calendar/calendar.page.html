@@ -1,0 +1,31 @@
+<ion-content>
+  <ion-button class="clear-button" fill="clear" (click)="goBack()">
+    <ion-icon name="arrow-back-sharp" class="white-icon"></ion-icon>
+  </ion-button>
+  <ion-item class="days">
+    <ion-datetime
+      presentation="date"
+      [(ngModel)]="dates"
+      name="date"
+      class="custom-calendar"
+    ></ion-datetime>
+  </ion-item>
+  <ion-list class="notes">
+    <ion-item class="n">
+      <ion-label position="stacked">NOTES:</ion-label>
+      <ion-input
+        col="4"
+        type="text"
+        placeholder="Input Your Text"
+        [(ngModel)]="notes"
+        name="notes"
+        class="note"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-row slot="end">
+        <ion-button (click)="submit()">Save</ion-button>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>

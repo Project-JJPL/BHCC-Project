@@ -1,0 +1,32 @@
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-row justify-content-center align-items-center>
+      <ion-col size="12" class="ion-text-center" style="margin-top: 170px">
+        <div class="content-container">
+          <h1 class="title">BHCC</h1>
+          <p class="subtitle">Banaba Health Care Center</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="login-container">
+    <ion-item>
+      <ion-label size="large" name="person-circle-outline" position="floating"
+        >Username</ion-label
+      >
+      <ion-input
+        [(ngModel)]="username"
+        type="text"
+        placeholder="Enter Username"
+      ></ion-input>
+      <ion-label size="large" position="floating">Password</ion-label>
+      <ion-input
+        [(ngModel)]="password"
+        type="password"
+        placeholder="Enter Password"
+      ></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="login()">Sign In</ion-button>
+  </div>
+</ion-content>

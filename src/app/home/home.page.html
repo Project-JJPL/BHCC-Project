@@ -1,0 +1,46 @@
+<ion-content>
+  <ion-button class="clear-button" fill="clear" (click)="goBack()">
+    <ion-icon name="arrow-back-sharp" class="white-icon"></ion-icon>
+  </ion-button>
+  <div class="segment-container">
+    <ion-segment class="small-segment colorless-background" value="all">
+      <ion-segment-button value="homepage" class="color">
+        <ion-label>HOMEPAGE</ion-label>
+      </ion-segment-button>
+      <ion-segment-button
+        class="color2"
+        value="abouts"
+        (click)="goForwardabts()"
+      >
+        <ion-label>ABOUTS</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <ion-card class="transparent-card"> </ion-card>
+  <div class="fab-container">
+    <ion-fab slot="fixed" vertical="bottom" horizontal="center">
+      <ion-fab-button class="fab">
+        <ion-icon name="medkit-outline"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-list side="end">
+        <ion-fab-button (click)="goForwarditr()">
+          <ion-icon size="large" name="person-add"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button (click)="goForward()">
+          <ion-icon size="large" name="document-attach-sharp"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+
+      <ion-fab-list side="start">
+        <ion-fab-button (click)="goForwardcalendar()">
+          <ion-icon size="large" name="calendar-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button (click)="goForwardsettings()">
+          <ion-icon size="large" name="settings-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </div>
+</ion-content>

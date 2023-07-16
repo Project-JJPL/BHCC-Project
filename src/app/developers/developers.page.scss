@@ -1,0 +1,65 @@
+.custom-header {
+  background-color: #f2f2f2;
+  border-bottom: 2px solid  rgb(76, 94, 148);
+  text-align: center;
+  padding: 20px;
+  color: rgb(76, 94, 148);
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.top-left-button {
+  color: rgb(56, 42, 94);
+    position: absolute;
+    top: -8px;
+    left: 5px;
+  }
+  .avatar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+    width: 40%;
+    height: 40%;
+
+    
+
+  }
+
+ion-card{
+  margin-top: 50px;
+}
+
+.avatar-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-background {
+  --ion-background-color: Linear-gradient(135deg, #4122ed, #8319b0); /* Replace with your desired card background color */
+  
+  
+}
+
+.custom-card-background {
+  --ion-background-color: linear-gradient(135deg, #242d5e, #ac1db4); /* Replace with your desired card background color */
+}
+
+.text-center {
+  text-align: center;
+  color: rgb(5, 5, 5);
+  font-weight: 700;
+ 
+}
+.background-back{
+  --ion-background-color: linear-gradient(135deg, #3aa0a3, #c788ca);
+}
+
+.text{
+  color:black
+}
